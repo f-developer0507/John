@@ -1,0 +1,126 @@
+.posts {
+  padding: 7px 0px 37px;
+
+  background-color: #edf7fa;
+}
+
+.posts__content {
+  margin-bottom: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts__title {
+  @include textStyle($fs: 22px, $fw: 400, $lh: 60px);
+  color: var(--text-color);
+}
+
+.posts__text {
+  @include textStyle($fs: 16px, $fw: 400);
+
+  color: var(--secondry);
+}
+
+.posts__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.posts__item {
+  padding: 25px 20px 35px;
+
+  width: 418px;
+
+  background-color: #fff;
+}
+
+.posts__item__title {
+  margin-bottom: 17px;
+
+  @include textStyle($fs: 26px, $fw: 700);
+
+  color: var(--text-color);
+}
+
+.posts__item__badge {
+  margin-bottom: 17px;
+
+  display: flex;
+  align-items: center;
+
+  @include textStyle($fs: 18px, $fw: 400);
+  color: var(--text-color);
+}
+
+.posts__item__badge span {
+  margin: 0px 30px;
+}
+
+.posts__item__text {
+  @include textStyle($fs: 16px, $fw: 400, $lh: 20px);
+  color: var(--text-color);
+}
+
+@media (max-width: 780px) {
+  .posts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+  }
+  .posts__content {
+    margin-bottom: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts__text {
+    display: none;
+  }
+  .posts__item {
+    padding: 25px 20px 35px;
+
+    width: 80%;
+  }
+}
+@media (max-width: 430px) {
+  .posts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+  }
+  .posts__content {
+    margin-bottom: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts__text {
+    display: none;
+  }
+  .posts__item {
+    padding: 12px 8px 22px 19px;
+
+    width: 100%;
+  }
+  .posts__item__title {
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .posts__item__badge {
+    margin-bottom: 19px;
+
+    font-size: 16px;
+  }
+  .posts__item__text {
+    line-height: 22px;
+  }
+}

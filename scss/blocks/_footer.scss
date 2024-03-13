@@ -1,6 +1,31 @@
 .site-footer {
   margin-top: auto;
+  padding: 50px 0px 55px;
 }
 
 .footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__list {
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.footer__link {
+  transition: opacity 0.3s ease-in;
+}
+
+.footer__link:hover {
+  opacity: 80%;
+}
+
+.footer__copyright {
+  @include textStyle($fs: 14px, $fw: 400);
 }

@@ -1,6 +1,11 @@
 :root {
-  --container-width: 1200px;
+  --container-width: 850px;
   --container-padding: 20px;
+
+  --primary: #ff6464;
+  --secondry: #00a8cc;
+  --text-color: #21243d;
+  --light: #8695a4;
 }
 
 @mixin display($fd: row, $jc: start, $ai: center) {
@@ -8,4 +13,16 @@
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
+}
+
+@mixin textStyle($fs: 20px, $fw: 500, $lh: auto) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+
+  color: #000;
+}
+
+.none {
+  display: none !important;
 }
