@@ -1,0 +1,171 @@
+.detail {
+  margin-bottom: 55px;
+}
+
+.detail-row {
+}
+
+.detail-content {
+  margin-bottom: 45px;
+
+  max-width: 680px;
+}
+
+.detail-content__title {
+  margin-bottom: 32px;
+
+  max-width: 505px;
+
+  @include textStyle($fs: 34px, $fw: 700);
+
+  color: var(--text-color);
+}
+
+.detail-content__badge {
+  margin-bottom: 23px;
+
+  display: flex;
+  align-items: start;
+  column-gap: 17px;
+
+  @include textStyle($fs: 20px, $fw: 400);
+
+  color: var(--text-color);
+}
+
+.detail-content__badge span {
+  position: relative;
+  padding: 2px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include textStyle($fs: 18px, $fw: 900);
+  color: #fff;
+}
+
+.detail-content__badge span::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: #ff7c7c;
+  z-index: -1;
+}
+
+.detail-content__text {
+  @include textStyle($fs: 16px, $fw: 400, $lh: 22px);
+}
+
+.detail-img {
+  width: 100%;
+  height: 460px;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.heading {
+  margin-bottom: 27px;
+}
+
+.heading__content {
+  max-width: 677px;
+}
+
+.heading__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include textStyle($fs: 30px, $fw: 500);
+
+  color: var(--text-color);
+}
+
+.heading__subtitle {
+  margin-bottom: 23px;
+
+  @include textStyle($fs: 24px, $fw: 500);
+
+  color: var(--text-color);
+}
+
+.heading__text {
+  margin-bottom: 30px;
+
+  @include textStyle($fs: 16px, $fw: 400, $lh: 22px);
+}
+
+.heading__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+}
+
+.heading__img {
+  width: 100%;
+  height: 460px;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .detail-content {
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .detail-content__title {
+    margin-bottom: 24px;
+
+    max-width: 100%;
+
+    font-size: 25px;
+  }
+
+  .detail-content__badge {
+    margin-bottom: 24px;
+
+    column-gap: 25px;
+    font-size: 15px;
+  }
+
+  .detail-img {
+    height: 265px;
+  }
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .heading__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+
+  .heading__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+  }
+
+  .heading__text {
+    margin-bottom: 24px;
+  }
+
+  .heading__img-wrapper {
+    row-gap: 23px;
+  }
+
+  .heading__img {
+    height: 265px;
+  }
+}

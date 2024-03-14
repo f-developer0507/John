@@ -1,0 +1,11 @@
+.work {
+  margin-bottom: 58px;
+}
+
+.work .works__title {
+  margin-bottom: 25px;
+
+  @include textStyle($fs: 44px, $fw: 900, $lh: 60px);
+  
+  color: var(--text-color);
+}
